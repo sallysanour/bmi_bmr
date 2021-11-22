@@ -483,10 +483,10 @@ class _bmrState extends State<bmr> {
                   child: TextButton(
                     onPressed: (){
                       if(ismale == true){
-                        bmr = 66 + (13.7 * weight) + (5 * h) - (6.8 * age);
+                        bmr = 66.5 + (13.75 * weight) + (5.003 * h) - (6.755 * age);
                       }
                       else{
-                        bmr = 655 + (9.6 * weight) + (1.8 * h) - (4.7 * age);
+                        bmr = 655.1 + (9.563 * weight) + (1.850 * h) - (4.676 * age);
                       }
                       Navigator.push(
                         context,

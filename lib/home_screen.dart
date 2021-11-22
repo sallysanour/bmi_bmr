@@ -30,7 +30,7 @@ class _homescreenState extends State<homescreen> {
             Text('calculate',
               style: TextStyle(
                 color: Color.fromRGBO(47, 207, 107, 1),
-                fontSize: 23.0,
+                fontSize: 25.0,
                 fontFamily: 'Roboto',
               ),
             ),
@@ -46,7 +46,7 @@ class _homescreenState extends State<homescreen> {
       ),
       body: Padding(
         padding: const EdgeInsetsDirectional.only(
-          top:20.0,
+          top: 20.0,
         ),
         child: Container(
           width:MediaQuery.of(context).size.width,

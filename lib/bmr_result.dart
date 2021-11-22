@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class bmr_result extends StatelessWidget {
@@ -81,6 +82,159 @@ class bmr_result extends StatelessWidget {
                   color: Color(0xff686868),
                   fontSize: 14,
                   fontFamily: 'Roboto',
+                ),
+              ),
+              SizedBox(
+                height: 30.0,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 200.0,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(246, 246, 246, 1),
+                    borderRadius: BorderRadius.circular(15.0),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.3),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Column(
+                      children: [
+                        Text('Daily calorie needs based on activity level',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Color.fromRGBO(47, 207, 107, 1),
+                              fontFamily: 'Roboto',
+                              fontWeight: FontWeight.w500,
+                              fontSize: 20.0
+                          ),
+                        ),
+                        SizedBox(
+                          height: 15.0,
+                        ),
+                        Row(
+                          children: [
+                            Text('sedentary/ little or no exercise --> ',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 16.0
+                              ),
+                            ),
+                            Text('${(bmr*1.2).round()}',
+                              style: TextStyle(
+                                  color: Color.fromRGBO(47, 207, 107, 1),
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 17.0
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 5.0,
+                        ),
+                        Row(
+                          children: [
+                            Text('light exercise/sports 1-3 days/week --> ',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 16.0
+                              ),
+                            ),
+                            Text('${(bmr*1.375).round()}',
+                              style: TextStyle(
+                                  color: Color.fromRGBO(47, 207, 107, 1),
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 17.0
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 5.0,
+                        ),
+                        Row(
+                          children: [
+                            Text('moderate exercise/sports 3-5 days/week --> ',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 16.0
+                              ),
+                            ),
+                            Text('${(bmr*1.55).round()}',
+                              style: TextStyle(
+                                  color: Color.fromRGBO(47, 207, 107, 1),
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 17.0
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 5.0,
+                        ),
+                        Row(
+                          children: [
+                            Text('hard exercise/sports 6-7 days a week --> ',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 16.0
+                              ),
+                            ),
+                            Text('${(bmr*1.725).round()}',
+                              style: TextStyle(
+                                  color: Color.fromRGBO(47, 207, 107, 1),
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 17.0
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 5.0,
+                        ),
+                        Row(
+                          children: [
+                            Text('very hard exercise/sports & physical job --> ',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 16.0
+                              ),
+                            ),
+                            Text('${(bmr*1.9).round()}',
+                              style: TextStyle(
+                                  color: Color.fromRGBO(47, 207, 107, 1),
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 17.0
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ],
